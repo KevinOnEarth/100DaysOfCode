@@ -1,11 +1,15 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <Questionnaire></Questionnaire>
 </template>
+<script>
+  import Questionnaire from './components/Questionnaire.vue'
 
+  export default {
+    components: {
+      Questionnaire
+    }
+  }
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
